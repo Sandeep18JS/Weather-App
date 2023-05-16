@@ -8,7 +8,7 @@ export const getApioptions = {
 
 export const GEO_API_URL= 'https://wft-geo-db.p.rapidapi.com/v1/geo/adminDivisions';
 export const WEATHER_API_URL ='https://api.openweathermap.org/data/2.5';
-export const API_KEY = 'c979f7c8dae29f57bafc4a14f4838a84';
+export const API_KEY = 'YOUR API';
 
 
 export async function getCities(inputValue) {
