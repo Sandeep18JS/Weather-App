@@ -12,7 +12,7 @@ export const API_KEY = 'YOUR API';
 
 
 export async function getCities(inputValue) {
-  const response = await fetch(`${GEO_API_URL}/?minPopulation=10000000&namePrefix=${inputValue}`, getApioptions);
+  const response = await fetch(`${GEO_API_URL}/?&namePrefix=${inputValue}`, getApioptions);
   const data = await response.json();
   return data.data.map(city => ({
     value: `${city.latitude} ${city.longitude}`,
