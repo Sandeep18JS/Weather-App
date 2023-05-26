@@ -10,8 +10,8 @@ const Forecast = ({ data }) => {
 
     return (
         <>
-            <label className="title">Daily</label>
-            <Accordion allowZeroExpanded>
+        <label className="title">Daily</label>
+            <Accordion allowZeroExpanded className="custom-accordion">
                 {data.list.splice(0, 7).map((item, idx) => (
                     <AccordionItem key={idx}>
                         <AccordionItemHeading>
@@ -29,11 +29,11 @@ const Forecast = ({ data }) => {
                             <div className="daily-details-grid">
                                 <div className="daily-details-grid-item">
                                     <label>pressure</label>
-                                    <label>{item.main.pressure}</label>
+                                    <label>{item.main.pressure}hPa</label>
                                 </div>
                                 <div className="daily-details-grid-item">
                                     <label>Humidity</label>
-                                    <label>{item.main.Humidity}</label>
+                                    <label>{item.main.humidity}%</label>
                                 </div>
                                 <div className="daily-details-grid-item">
                                     <label>clouds</label>
@@ -54,7 +54,7 @@ const Forecast = ({ data }) => {
                             </div>
                         </AccordionItemPanel>
                     </AccordionItem>
-                ))};
+                ))}
             </Accordion>
         </>
     )
