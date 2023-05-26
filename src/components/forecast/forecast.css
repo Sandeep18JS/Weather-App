@@ -1,3 +1,7 @@
+.custom-accordion {
+    max-width: 65%; 
+    margin: 0 auto;
+  }
 .title{
     font-size: 23px;
     font-weight: 700;
